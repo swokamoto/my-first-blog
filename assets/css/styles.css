@@ -1,7 +1,6 @@
-/* set variable to color */
 :root {
     --color-primary: #f5f2e7e7;
-    --color-secondary: #839cb6;
+    --color-secondary: #aac1da;
     --color-tertiary: #141633;
 }
 
@@ -19,6 +18,7 @@ nav {
     align-items: center;
     height: 10vh;
     background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 nav h1 {

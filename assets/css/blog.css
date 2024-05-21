@@ -1,29 +1,8 @@
-:root {
-    --color-primary: #f5f2e7e7;
-    --color-secondary: #839cb6;
-    --color-tertiary: #141633;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    height: 10vh;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-
-}
-
 container {
-    display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-evenly;
     overflow-y: scroll;
-    height: 63vh;
     background-color: #ebd78fb2;
     border: .5em solid var(--color-secondary);
-    padding: 1em;
 }
 
 .card-body {
@@ -38,11 +17,6 @@ container {
     border-radius: 1em;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+.card-body p {
+    overflow-wrap: break-word;
 }

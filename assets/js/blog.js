@@ -1,7 +1,9 @@
+// generates the blog posts from the local storage and displays them on the page
 document.addEventListener('DOMContentLoaded', function() {
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     const blogPostsContainer = document.getElementById('blogContent');
     
+    // loop through blog posts and add them to container
     blogPosts.forEach(function(blogPost) {
         const blogPostCard = document.createElement('div');
         
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     );
 });
 
+// button to go back to form page
 const back = document.getElementById('backButton');
 back.addEventListener('click', function() {
     window.location.href = './index.html';
